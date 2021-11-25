@@ -1,6 +1,6 @@
 <template>
 	<code class="text-gray-200 bg-discord-blurple-560 p-4 md:text-lg mx-auto rounded-md shadow flex items-center"
-		><span class="hover:text-white mr-2">npm install discord_js-economy</span>
+		><span class="hover:text-white mr-2">npm install @badboy-discord/discordjs-economy</span>
 		<button ref="copyButton" class="focus:outline-none" aria-label="Copy install command">
 			<heroicons-outline-clipboard-copy
 				v-if="!copied"
@@ -39,7 +39,7 @@ const { show: showTooltip, hide: hideTooltip } = useTippy(copyButton, {
 
 const copyInstallCmd = async () => {
 	try {
-		await navigator.clipboard.writeText('npm install discord_js-economy');
+		await navigator.clipboard.writeText('npm install @badboy-discord/discordjs-economy');
 		showTooltip();
 	} catch {}
 
