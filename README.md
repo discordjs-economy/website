@@ -1,2 +1,1 @@
-# website
-DiscordJS-Economy Website
+# discordjs-economy/website
