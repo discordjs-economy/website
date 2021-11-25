@@ -1,2 +1,0 @@
-# website
-DiscordJS-Economy Website
