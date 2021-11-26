@@ -35,9 +35,9 @@ export const store = createStore<State>({
 		branches: [],
 		file: null,
 		stats: {
-			downloads: `${(0).toLocaleString()}+`,
-			stars: `${(0).toLocaleString()}+`,
-			contributors: `${(0).toLocaleString()}+`,
+			downloads: `${(0).toLocaleString()}`,
+			stars: `${(0).toLocaleString()}`,
+			contributors: `${(0).toLocaleString()}`,
 		},
 		searchIndex: [],
 		searchRef: [],
@@ -100,9 +100,9 @@ export const store = createStore<State>({
 			commit({
 				type: 'setStats',
 				stats: {
-					downloads: `${downloads.toLocaleString()}+`,
-					stars: `${stars.toLocaleString()}+`,
-					contributors: `${contributors.toLocaleString()}+`,
+					downloads: `${downloads.toLocaleString()}`,
+					stars: `${stars.toLocaleString()}`,
+					contributors: `${contributors.toLocaleString()}`,
 				},
 			});
 		},

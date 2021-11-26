@@ -1,8 +1,16 @@
 <template>
 	<ul>
-		<li>{{ downloads }} downloads</li>
-		<li>{{ stars }} stars</li>
-		<li>{{ contributors }} contributors</li>
+		<li>
+			<strong>{{ downloads }} downloads</strong>
+		</li>
+
+		<li>
+			<strong>{{ stars }} stars</strong>
+		</li>
+
+		<li>
+			<strong>{{ contributors }} contributors</strong>
+		</li>
 	</ul>
 </template>
 
