@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { InjectionKey } from 'vue';
 import { createStore, useStore as baseUseStore, Store } from 'vuex';
 
@@ -35,9 +38,9 @@ export const store = createStore<State>({
 		branches: [],
 		file: null,
 		stats: {
-			downloads: `${(0).toLocaleString()}`,
-			stars: `${(0).toLocaleString()}`,
-			contributors: `${(0).toLocaleString()}`,
+			downloads: `${(0).toLocaleString("be")}`,
+			stars: `${(0).toLocaleString("be")}`,
+			contributors: `${(0).toLocaleString("be")}`,
 		},
 		searchIndex: [],
 		searchRef: [],
@@ -100,9 +103,9 @@ export const store = createStore<State>({
 			commit({
 				type: 'setStats',
 				stats: {
-					downloads: `${downloads.toLocaleString()}`,
-					stars: `${stars.toLocaleString()}`,
-					contributors: `${contributors.toLocaleString()}`,
+					downloads: `${downloads.toLocaleString("be")}`,
+					stars: `${stars.toLocaleString("be")}`,
+					contributors: `${contributors.toLocaleString("be")}`,
 				},
 			});
 		},
@@ -151,7 +154,7 @@ export const store = createStore<State>({
 					docs: null,
 				});
 
-				// @ts-ignore
+				// @ts-expect-error
 				fetchError.value = error;
 
 				return;
@@ -254,6 +257,8 @@ export const store = createStore<State>({
 			documentation.links = {
 				string: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String',
 				number: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number',
+				String: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String',
+				Number: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number',
 				bigint: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt',
 				boolean: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean',
 				true: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean',

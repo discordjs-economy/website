@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { defineConfig } from 'vite';
 import Vue from '@vitejs/plugin-vue';
 import { VitePWA } from 'vite-plugin-pwa';
