@@ -154,7 +154,6 @@ export const store = createStore<State>({
 					docs: null,
 				});
 
-				// @ts-expect-error
 				fetchError.value = error;
 
 				return;
